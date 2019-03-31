@@ -19,7 +19,6 @@ html, body {
 .navbar {
     /**box-shadow: 0 3px 8px 0 rgba(0,0,0,0.16),0 3px 13px 0 rgba(0,0,0,0.12);**/
     box-shadow: 0 8px 6px -6px black;
-    padding: 0;
 }
 
 .navbar img {
