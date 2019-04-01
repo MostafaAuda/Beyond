@@ -269,7 +269,12 @@ header .socialicons a:hover {
 #aboutcompany .elementTitle {
     font-size: 20px!important;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#aboutcompany .element p {
+    margin-top: 20px;
 }
 /** The end of About The Company **/
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -319,7 +324,7 @@ header .socialicons a:hover {
     transition: 0.5s;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 992px) {
     #workfigure {
         display: none;
     }
@@ -388,7 +393,7 @@ header .socialicons a:hover {
 }
 
 #theteam .member h5 {
-    margin: 10px 0 0 10px;
+    margin: 0 0 0 10px;
     font-size: 15px;
     font-weight: lighter;
     opacity: 0.90;
@@ -472,7 +477,7 @@ header .socialicons a:hover {
     text-align: center;
     display: block;
     margin-top: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-size: 18px!important;
 }
 
@@ -480,7 +485,7 @@ header .socialicons a:hover {
     height: 210px;
     position: relative;
     border-radius: 4px;
-    margin-top: 30px; 
+    margin-top: 20px; 
 }
 
 #ourwork .sample img {
