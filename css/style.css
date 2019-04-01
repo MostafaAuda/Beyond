@@ -397,3 +397,250 @@ header .socialicons a:hover {
 }
 /** The end of The Team **/
 /*--------------------------------------------------------------------------------------------------------------------*/
+/** Statics **/
+#statics {
+    background-color: #616161!important;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+#statics .stats {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#statics .stats span.number {
+    padding: 0;
+    margin: 0;
+    display: block;
+    color: white;
+    font-size: 35px;
+}
+
+#statics .stats span {
+    padding: 0;
+    margin: 0;
+    display: block;
+    color: white;
+    font-size: 15px;
+}
+/** The end of Statics **/
+/*--------------------------------------------------------------------------------------------------------------------*/
+/** Our Work **/
+#ourwork {
+    overflow: hidden;
+}
+
+#ourwork h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px!important;
+    margin: 0;
+    padding: 0;
+}
+
+#ourwork span {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 18px!important;
+}
+
+#ourwork .sample {
+    height: 210px;
+    position: relative;
+    border-radius: 4px;
+    margin-top: 30px; 
+}
+
+#ourwork .sample img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    transition: transform .2s;
+
+}
+
+#ourwork .sample img:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+
+/** The end of Our Work **/
+/*--------------------------------------------------------------------------------------------------------------------*/
+/** Our Skills **/
+#ourskills {
+    overflow: hidden;
+    background-color: #F1F1F1;
+    margin-top: 100px;
+}
+
+#ourskills .skills {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#ourskills .skills h3 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px!important;
+    margin: 0;
+    padding: 0 0 30px 0;
+}
+
+#ourskills .skillsmeter {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#ourskills .skillsmeter span {
+    margin-left: 10px;
+    letter-spacing: 4px;
+}
+
+/* Styling an indeterminate progress bar */
+
+progress:not(value) {
+    /* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
+}
+
+/* Styling the determinate progress element */
+
+progress[value] {
+
+    /* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+    border: none;
+
+    /* Add dimensions */
+    width: 100%; height: 20px;
+
+    /* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+    background-color: whiteSmoke;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+
+    /* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+    color: royalblue;
+
+    position: relative;
+}
+
+/*
+Webkit browsers provide two pseudo classes that can be use to style HTML5 progress element.
+-webkit-progress-bar -> To style the progress element container
+-webkit-progress-value -> To style the progress element value.
+*/
+
+progress[value]::-webkit-progress-bar {
+    background-color: whiteSmoke;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+progress[value]::-webkit-progress-value {
+    position: relative;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    border-radius:3px;
+
+    /* Let's animate this */
+    animation: animate-stripes 5s linear infinite;
+}
+
+@keyframes animate-stripes { 100% { background-position: -100px 0; } }
+
+/* Let's spice up things little bit by using pseudo elements. */
+
+progress[value]::-webkit-progress-value:after {
+    /* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
+    content: '';
+    position: absolute;
+    width:5px; height:5px;
+    top:7px; right:7px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+/* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
+
+progress[value]::-moz-progress-bar {
+    /* Gradient background with Stripes */
+    background-image:
+            -moz-linear-gradient( 135deg,
+            transparent,
+            transparent 33%,
+            rgba(0,0,0,.1) 33%,
+            rgba(0,0,0,.1) 66%,
+            transparent 66%),
+            -moz-linear-gradient( top,
+            rgba(255, 255, 255, .25),
+            rgba(0,0,0,.2)),
+            -moz-linear-gradient( left, #09c, #f44);
+
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    border-radius:3px;
+
+    /* Firefox doesn't support CSS3 keyframe animations on progress element. Hence, we did not include animate-stripes in this code block */
+}
+
+/* Fallback technique styles */
+.progress-bar {
+    background-color: whiteSmoke;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+
+    /* Dimensions should be similar to the parent progress element. */
+    width: 100%; height:20px;
+}
+
+.progress-bar span {
+    background-color: royalblue;
+    border-radius: 3px;
+    display: block;
+    text-indent: -9999px;
+}
+
+p[data-value] {
+    position: relative;
+}
+
+/* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */
+
+p[data-value]:after {
+    content: attr(data-value) '%';
+    position: absolute; right:0;
+}
+
+.chrome::-webkit-progress-value {
+    /* Gradient background with Stripes */
+    background-image:
+            -webkit-linear-gradient( 135deg,
+            transparent,
+            transparent 33%,
+            rgba(0,0,0,.1) 33%,
+            rgba(0,0,0,.1) 66%,
+            transparent 66%),
+            -webkit-linear-gradient( top,
+            rgba(255, 255, 255, .25),
+            rgba(0,0,0,.2)),
+            -webkit-linear-gradient( left, #09c, #f44);
+}
+
+@media only screen and (max-width: 768px) {
+    #ourskills .skills h3 {
+        text-align: center;
+    }
+
+    #ourskills .skills p {
+        text-align: center;
+    }
+
+    #ourskills .skillsmeter {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+}
+/** The end of Our Skills **/
+/*--------------------------------------------------------------------------------------------------------------------*/
