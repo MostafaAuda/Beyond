@@ -677,3 +677,142 @@ p[data-value]:after {
 }
 /** The end of Our Skills **/
 /*--------------------------------------------------------------------------------------------------------------------*/
+/** Pricing **/
+#pricing {
+    overflow: hidden;
+    background-image: url("../images/e-commerce-payment-gateways-PIC-MCH061377.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#pricing h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px!important;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+#pricing span {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    font-size: 18px!important;
+    color: white;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    margin-bottom: 50px;
+}
+
+#pricing  .pricepackage {
+    background-color: white;
+}
+
+#pricing  .pricepackage:not(.middle) {
+    margin-top: 20px;
+}
+
+#pricing  .pricepackage:hover {
+    transition: 0.5s;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.75);
+}
+
+#pricing  .pricepackage ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#pricing  .pricepackage ul li {
+    border-bottom: 1px solid #ddd;
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+}
+
+#pricing  .pricepackage ul li.description1 {
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    font-size: 24px!important;
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+}
+
+#pricing  .middle ul li.description1 {
+    background-color: #F44336;
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
+}
+
+#pricing  .pricepackage ul li.theprice {
+    padding-top: 30px!important;
+    padding-bottom: 30px!important;
+    color: #9e9e9e;
+}
+
+#pricing  .pricepackage ul li.theprice b {
+    font-size: 30px!important;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: black;
+}
+
+#pricing  .pricepackage ul li.signup button {
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 15px 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+#pricing  .pricepackage ul li.signup button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    padding: 0;
+    margin: 0;
+}
+
+#pricing  .pricepackage ul li.signup button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+#pricing  .pricepackage ul li.signup button:hover span {
+    padding-right: 25px;
+}
+
+#pricing  .pricepackage ul li.signup button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    #pricing  .pricepackage:not(.middle) {
+        margin-top: 0;
+    }
+}
+/** The end of Pricing **/
+/*--------------------------------------------------------------------------------------------------------------------*/
