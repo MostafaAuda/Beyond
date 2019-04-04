@@ -49,19 +49,19 @@
             <div class="collapse navbar-collapse" id="main-nav">
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.html#aboutcompany"><i class="fas fa-globe-africa"></i>  ABOUT</a>
+                        <a class="nav-link" href="#aboutcompany"><i class="fas fa-globe-africa"></i>  ABOUT</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.html#theteam"><i class="fa fa-user"></i> TEAM</a>
+                        <a class="nav-link" href="#theteam"><i class="fa fa-user"></i> TEAM</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.html#ourwork"><i class="fa fa-th"></i> WORK</a>
+                        <a class="nav-link" href="#ourwork"><i class="fa fa-th"></i> WORK</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.html#pricing"><i class="fa fa-dollar-sign"></i> PRICING</a>
+                        <a class="nav-link" href="#pricing"><i class="fa fa-dollar-sign"></i> PRICING</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="index.html#contactus" style="padding-right: 0;"><i class="fa fa-envelope"></i> CONTACT</a>
+                        <a class="nav-link" href="#contactus" style="padding-right: 0;"><i class="fa fa-envelope"></i> CONTACT</a>
                     </li>
 
                 </ul>
@@ -420,6 +420,19 @@
             $('html, body').animate({scrollTop:(scroll_pos)}, 2000);
         });
     });
+
+    //Scroll to position animation
+    $('a[href*="#"]').on('click', function(e) {
+    e.preventDefault()
+
+    $('html, body').animate(
+        {
+        scrollTop: $($(this).attr('href')).offset().top,
+        },
+        1000,
+        'linear'
+    )
+    })
 </script>
 
 </body>
