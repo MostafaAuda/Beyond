@@ -179,6 +179,10 @@ header .socialicons a:hover {
 
 @media only screen and (max-width: 576px) {
     /* Header Style*/
+    header {
+        background: url("../images/H3.jpg");
+    }
+
     header .headerinfo{
         margin-top: 150px;
     }
