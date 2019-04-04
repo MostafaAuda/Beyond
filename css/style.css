@@ -22,8 +22,7 @@ html, body {
 }
 
 .navbar img {
-    width: 200px;
-    height: auto;
+
 }
 
 .nav-item {
@@ -44,7 +43,7 @@ html, body {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: red;
+    color:  #ff471a;
 }
 /* The end of Navigation Bar Style*/
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -439,8 +438,7 @@ header .socialicons a:hover {
     }
 
     #theteam .member button {
-        background-color: #f2f2f2
-        ;
+        box-shadow: 0;
     }
 }
 /** The end of The Team **/
@@ -515,7 +513,7 @@ header .socialicons a:hover {
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    transition: transform .2s;
+    transition: transform .7s;
 
 }
 
@@ -733,10 +731,6 @@ p[data-value]:after {
     background-color: white;
 }
 
-#pricing  .pricepackage:not(.middle) {
-    margin-top: 20px;
-}
-
 #pricing  .pricepackage:hover {
     transition: 0.5s;
     box-shadow: 0 10px 15px 0 rgba(0,0,0,0.75);
@@ -766,8 +760,6 @@ p[data-value]:after {
 
 #pricing  .middle ul li.description1 {
     background-color: #F44336;
-    padding-top: 50px!important;
-    padding-bottom: 50px!important;
 }
 
 #pricing  .pricepackage ul li.theprice {
@@ -925,6 +917,11 @@ p[data-value]:after {
 
     #contactus .map {
         display: none;
+    }
+
+    #contactus i {
+        display: block; 
+        margin-bottom: 5px;
     }
 }
 /** The end of Contact US **/
