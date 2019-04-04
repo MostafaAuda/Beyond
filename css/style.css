@@ -654,11 +654,11 @@ p[data-value]:after {
     padding-top: 50px;
     padding-bottom: 50px;
     background: url("../images/Prices.jpg");
-    background-repeat: no-repeat;
     background-attachment: fixed;
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
+    background-size: 100% 100%;
 }
 
 #pricing h3 {
