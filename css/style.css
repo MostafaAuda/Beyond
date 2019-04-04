@@ -56,12 +56,15 @@ html, body {
 /*--------------------------------------------------------------------------------------------------------------------*/
 /* Header Style*/
 header {
-    background-image: url("../images/H1.jpg");
-    background-size: 100% 100%;
     min-height: 100vh;
     overflow: hidden;
-    background-attachment: fixed;
     position: relative;
+    background: url("../images/H1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
 }
 
 header .HeaderOverlay {
@@ -131,7 +134,7 @@ header .socialicons a:hover {
 @media only screen and (max-width: 768px) {
     /* Header Style*/
     header {
-        background: url("../images/H2.jpg") center repeat-x fixed;
+        background: url("../images/H2.jpg");
     }
 
     header .headerinfo{
@@ -176,10 +179,6 @@ header .socialicons a:hover {
 
 @media only screen and (max-width: 576px) {
     /* Header Style*/
-    header {
-        background: url("../images/H2.jpg") center repeat-x fixed;
-    }
-
     header .headerinfo{
         margin-top: 150px;
     }
