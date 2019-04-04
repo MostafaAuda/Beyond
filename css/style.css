@@ -3,7 +3,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 html, body {
     line-height: 1.8;
-    height: 100%;
 }
 
 *:focus {
@@ -290,59 +289,6 @@ header .socialicons a:hover {
     margin-top: 20px;
 }
 /** The end of About The Company **/
-/*--------------------------------------------------------------------------------------------------------------------*/
-/** Work Figure **/
-#workfigure {
-    overflow: hidden;
-}
-
-#workfigure .myVideo {
-    height:500px;
-    width:100%;
-    overflow: hidden;
-    position: relative;
-}
-
-#workfigure .myVideo video {
-    width: 100%;
-    min-height: 100%;
-}
-
-#workfigure .caption {
-    position: absolute;
-    /*left: 27px;*/
-    top: 70px;
-}
-
-#workfigure .caption h3 {
-    font-weight: bold;
-    font-size: 24px!important;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-#workfigure .caption button {
-    padding: 13px 17px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-#workfigure .caption button:hover {
-    color: black!important;
-    background-color: #CCCCCC!important;
-    transition: 0.5s;
-}
-
-@media only screen and (max-width: 992px) {
-    #workfigure {
-        display: none;
-    }
-}
-/** The end of Work Figure **/
 /*--------------------------------------------------------------------------------------------------------------------*/
 /** The Team **/
 #theteam h3 {
