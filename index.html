@@ -36,6 +36,7 @@
 </head>
 
 <body>
+
     <!--Navigation Bar-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
@@ -60,7 +61,7 @@
                         <a class="nav-link" href="#"><i class="fa fa-dollar-sign"></i> PRICING</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#"><i class="fa fa-envelope"></i> CONTACT</a>
+                        <a class="nav-link" href="#" style="padding-right: 0;"><i class="fa fa-envelope"></i> CONTACT</a>
                     </li>
 
                 </ul>
@@ -152,40 +153,48 @@
             <div class="row">
                 <h3 class="col-12">THE TEAM</h3>
                 <span class="col-12">The ones who runs this company</span>
-                <div class="col-lg-3 col-md-6 col-sm-6 pb-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 pb-3 ">
                     <div class="member">
-                        <img alt= "" src="images/team1.jpg">
-                        <div class="overlay"></div>
+                        <div class="overlayParent">
+                            <img alt= "" src="images/team1.jpg">
+                            <div class="overlay"></div>
+                        </div>
                         <h4>John Doe</h4>
                         <h5>CEO & Founder</h5>
                         <p>People who play the implementer role in a team are those who actually get things done in the team. They are practical, efficient and well-organized.</p>
                         <button><i class="fas fa-envelope"></i> Contact </button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 pb-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 pb-3 ">
                     <div class="member">
-                        <img alt= "" src="images/team3.jpg">
-                        <div class="overlay"></div>
+                        <div class="overlayParent">
+                            <img alt= "" src="images/team3.jpg">
+                            <div class="overlay"></div>
+                        </div>
                         <h4>Mike Ross</h4>
                         <h5>Art Director</h5>
                         <p>Coordinators are seen as possessing the traditional team role. They're mature and confident in nature and possess great listening skill.</p>
                         <button><i class="fas fa-envelope"></i> Contact </button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 pb-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 pb-3 ">
                     <div class="member">
-                        <img alt= "" src="images/team2.jpg">
-                        <div class="overlay"></div>
+                        <div class="overlayParent">
+                            <img alt= "" src="images/team2.jpg">
+                            <div class="overlay"></div>
+                        </div>
                         <h4>Anja Doe</h4>
                         <h5>Web Designer</h5>
                         <p>Team workers are the people who ensure the team remains united. They work toward resolving conflict or issues affecting the team’s dynamics.</p>
                         <button><i class="fas fa-envelope"></i> Contact </button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 pb-3">
+                <div class="col-lg-3 col-md-6 col-sm-6 pb-3 ">
                     <div class="member">
-                        <img alt= "" src="images/team4.jpg">
-                        <div class="overlay"></div>
+                        <div class="overlayParent">
+                            <img alt= "" src="images/team4.jpg">
+                            <div class="overlay"></div>
+                        </div>
                         <h4>Dan Star</h4>
                         <h5>Designer</h5>
                         <p>Workers with expert knowledge in a particular area comprise the specialist role. Their contribution to the team is limited only to their area of expertise.</p>
@@ -195,7 +204,7 @@
             </div>
         </div>
     </section>
-        <!-- The end of The Team -->
+    <!-- The end of The Team -->
 
     <!-- Statics -->
     <section id="statics">
@@ -271,7 +280,7 @@
                 </div>
             </div>
     </section>
-        <!-- The end of Our Work -->
+    <!-- The end of Our Work -->
 
     <!-- Our Skills -->
     <section id="ourskills">
@@ -347,15 +356,71 @@
 =    </section>
     <!-- The end of Pricing -->
 
-<!-- JQuery Library-->
-<!-- Popper-->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/jquery.color.plus-names-2.1.2.min.js"></script>
+    <!-- Contact US -->
+    <section id="contactus" class="TopPadding">
+        <div class="container-fluid">
+            <div class="row">
+                <h3 class="col-12">CONTACT</h3>
+                <span class="sendMsg col-12">Lets get in touch. Send us a message:</span>
+                <span class="info col-sm-4"><i class="fas fa-map-marker-alt "></i> &nbsp; <b>Address:</b> Becho City, Maadi, Cairo, Egypt</span>
+                <span class="info col-sm-4"><i class="fas fa-phone "></i> &nbsp; <b>Phone:</b> +201120031551</span>
+                <span class="info col-sm-4"><i class="fas fa-envelope "></i> &nbsp; <b>Email:</b> Mostafa.Auda@outlook.com</span>
+                <div class="map col-lg-6 col-sm-12">
+                    <img alt= "" src="images/map.png">
+                </div>
+                <div class="contactform col-lg-6 col-sm-12">
+                <form>
+                    <input type="text" name="name" placeholder="Type Your Name">
+                    <input type="email" name="email" placeholder="Type Your Email">
+                    <input type="text" name="subject" placeholder="Type The Subject">
+                    <textarea placeholder="Your Message"></textarea>
+                    <button><i class="fa fa-paper-plane"></i> SEND MESSAGE </button>
+                </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- The end of Contact US -->
 
-    <script src="js/popper.min.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <button id="toTop" class="col-4 col-md-2 mx-auto"><span>To The Top</span></button>
+                <div class="socialicons col-12">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-pinterest"></i></a>
+                    <a href=""><i class="fab fa-snapchat"></i></a>
+                </div>
+                <span class="col-12">Powered by Mostafa Auda</span>
+            </div>
+        </div>
+    </footer>
+    <!-- The end of Footer -->
+
+<!-- JQuery Library-->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.color.plus-names-2.1.2.min.js"></script>
+
+<!-- Popper-->
+<script src="js/popper.min.js"></script>
 
 <!-- Bootstrap-->
 <script src="js/bootstrap.min.js"></script>
+
+<!-- Scripts-->
+<script>
+    //To top button
+    $("#toTop").click(function () {
+        $(function(){
+            var scroll_pos=(0);
+            $('html, body').animate({scrollTop:(scroll_pos)}, 2000);
+        });
+    });
+</script>
 
 </body>
 </html>

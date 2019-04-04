@@ -350,15 +350,20 @@ header .socialicons a:hover {
 
 #theteam .member {
     border-radius: 10px;
-    height: 100%;
+    height: 530px;
     text-align: left;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+#theteam .member .overlayParent {
+    width: 100%;
+    height: 200px;
     position: relative;
 }
 
 #theteam .member img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     border-style: none;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -371,7 +376,7 @@ header .socialicons a:hover {
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     top: 0;
     width: 100%;
-    height: 42%;
+    height: 100%;
     transition: .5s ease;
     opacity: 0;
     color: white;
@@ -404,7 +409,7 @@ header .socialicons a:hover {
 }
 
 #theteam .member button {
-    width: 90%;
+    width: 80%;
     display: block;
     margin: 15px auto;
     padding: 7px 0;
@@ -412,13 +417,26 @@ header .socialicons a:hover {
     cursor: pointer;
     background-color: #F1F1F1;
     font: inherit;
-    border-radius: 4px;
-
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16), 0 5px 10px 0 rgba(0,0,0,0.12);
 }
 
 #theteam .member button:hover {
     transition: 0.5s;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.16), 0 5px 10px 0 rgba(0,0,0,0.12);
+    color: white;
+    background-color: black;
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    #theteam .member {
+        text-align: center;
+    }
 }
 /** The end of The Team **/
 /*--------------------------------------------------------------------------------------------------------------------*/
@@ -501,7 +519,6 @@ header .socialicons a:hover {
     -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
   }
-
 /** The end of Our Work **/
 /*--------------------------------------------------------------------------------------------------------------------*/
 /** Our Skills **/
@@ -534,14 +551,7 @@ header .socialicons a:hover {
     letter-spacing: 4px;
 }
 
-/* Styling an indeterminate progress bar */
-
-progress:not(value) {
-    /* Add your styles here. As part of this walkthrough we will focus only on determinate progress bars. */
-}
-
 /* Styling the determinate progress element */
-
 progress[value] {
 
     /* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
@@ -585,7 +595,6 @@ progress[value]::-webkit-progress-value {
 @keyframes animate-stripes { 100% { background-position: -100px 0; } }
 
 /* Let's spice up things little bit by using pseudo elements. */
-
 progress[value]::-webkit-progress-value:after {
     /* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
     content: '';
@@ -597,7 +606,6 @@ progress[value]::-webkit-progress-value:after {
 }
 
 /* Firefox provides a single pseudo class to style the progress element value and not for container. -moz-progress-bar */
-
 progress[value]::-moz-progress-bar {
     /* Gradient background with Stripes */
     background-image:
@@ -640,7 +648,6 @@ p[data-value] {
 }
 
 /* The percentage will automatically fall in place as soon as we make the width fluid. Now making widths fluid. */
-
 p[data-value]:after {
     content: attr(data-value) '%';
     position: absolute; right:0;
@@ -772,12 +779,12 @@ p[data-value]:after {
 }
 
 #pricing  .pricepackage ul li.signup button {
-    border-radius: 4px;
+    border-radius: 10px;
     background-color: black;
     border: none;
     color: #FFFFFF;
     text-align: center;
-    padding: 15px 25px;
+    padding: 10px 25px;
     transition: all 0.5s;
     cursor: pointer;
 }
@@ -813,6 +820,176 @@ p[data-value]:after {
     #pricing  .pricepackage:not(.middle) {
         margin-top: 0;
     }
+
+    #pricing  .pricepackage ul li.signup button {
+        border-radius: 50px;
+        padding: 6px 25px;
+    }
 }
 /** The end of Pricing **/
 /*--------------------------------------------------------------------------------------------------------------------*/
+/** Contact US **/
+#contactus {
+    overflow: hidden;
+}
+
+#contactus h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px!important;
+    margin: 0;
+    padding: 0;
+}
+
+#contactus .sendMsg {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    font-size: 18px!important;
+    margin-bottom: 50px;
+}
+
+#contactus .info {
+    text-align: center;
+}
+
+#contactus .contactform form {
+    margin-top: 30px;
+    text-align: center;
+
+}
+
+#contactus .contactform form input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    border: 1px solid #ccc!important;
+    font: inherit;
+    border-radius: 10px;
+}
+
+#contactus .contactform form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    border: 1px solid #ccc!important;
+    font: inherit;
+    resize: none;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#contactus .contactform form button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#contactus .contactform form button:hover {
+    transition: 0.5s;
+    background-color: #CCCCCC;
+    color: black;
+}
+
+#contactus .map {
+    text-align: center;
+}
+
+#contactus .map img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    #contactus .info {
+        text-align: center;
+    }
+
+    #contactus .contactform form button {
+        padding: 6px 25px;
+        border-radius: 50px;
+    }
+
+    #contactus .map {
+        display: none;
+    }
+}
+/** The end of Contact US **/
+/*--------------------------------------------------------------------------------------------------------------------*/
+/** Footer **/
+footer {
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px; 
+}
+
+footer button {
+    border-radius: 10px;
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    padding: 12px 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+footer button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    padding: 0;
+    margin: 0;
+}
+
+footer button span:after {
+    content: '▲';
+    position: absolute;
+    opacity: 0;
+    top: 18px;
+    right: 40%;
+    transition: 0.5s;
+}
+
+footer button:hover span {
+    padding-top: 25px;
+}
+
+footer button:hover span:after {
+    opacity: 1;
+    top: 0;
+}
+
+footer .socialicons {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .socialicons a {
+    font-size: 24px!important;
+    color: white;
+    margin: 3px;
+}
+
+footer .socialicons a:hover {
+    opacity: 0.60;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+/** The end of Footer **/
