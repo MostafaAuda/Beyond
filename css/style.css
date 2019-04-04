@@ -781,9 +781,9 @@ p[data-value]:after {
     #pricing {
         background: url("../images/Prices3.jpg");
         background-attachment: fixed;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
+        -o-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
         background-repeat: no-repeat;
     }
 
@@ -797,9 +797,9 @@ p[data-value]:after {
     #pricing {
         background: url("../images/Prices2.jpg");
         background-attachment: fixed;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
+        -o-background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
         background-repeat: no-repeat;
     }
 }
