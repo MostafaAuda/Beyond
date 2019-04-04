@@ -134,11 +134,7 @@ header .socialicons a:hover {
     /* Header Style*/
     header {
         background: url("../images/H2.jpg");
-        background-repeat: no-repeat;
         background-attachment: fixed;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
     }
 
     header .headerinfo{
@@ -185,11 +181,7 @@ header .socialicons a:hover {
     /* Header Style*/
     header {
         background: url("../images/H3.jpg");
-        background-repeat: no-repeat;
         background-attachment: fixed;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
     }
 
     header .headerinfo{
@@ -789,10 +781,6 @@ p[data-value]:after {
     #pricing {
         background: url("../images/Prices3.jpg");
         background-attachment: fixed;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
     }
 
     #pricing  .pricepackage ul li.signup button {
@@ -805,10 +793,6 @@ p[data-value]:after {
     #pricing {
         background: url("../images/Prices2.jpg");
         background-attachment: fixed;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-repeat: no-repeat;
     }
 }
 /** The end of Pricing **/
