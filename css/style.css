@@ -658,7 +658,7 @@ p[data-value]:after {
     -o-background-size: cover;
     -moz-background-size: cover;
     -webkit-background-size: cover;
-    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 #pricing h3 {
@@ -776,13 +776,21 @@ p[data-value]:after {
 }
 
 @media only screen and (max-width: 768px) {
-    #pricing  .pricepackage:not(.middle) {
-        margin-top: 0;
+    #pricing {
+        background: url("../images/Prices3.jpg");
+        background-attachment: fixed;
     }
 
     #pricing  .pricepackage ul li.signup button {
         border-radius: 50px;
         padding: 6px 25px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #pricing {
+        background: url("../images/Prices2.jpg");
+        background-attachment: fixed;
     }
 }
 /** The end of Pricing **/
