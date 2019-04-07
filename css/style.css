@@ -134,7 +134,8 @@ header .socialicons a:hover {
     /* Header Style*/
     header {
         background: url("../images/H2.jpg");
-        background-attachment: fixed;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
     }
 
     header .headerinfo{
@@ -181,7 +182,8 @@ header .socialicons a:hover {
     /* Header Style*/
     header {
         background: url("../images/H3.jpg");
-        background-attachment: fixed;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
     }
 
     header .headerinfo{
@@ -372,7 +374,7 @@ header .socialicons a:hover {
 #theteam .member button {
     width: 80%;
     display: block;
-    margin: 15px auto;
+    margin: 10px auto;
     padding: 7px 0;
     border: none;
     cursor: pointer;
@@ -657,12 +659,12 @@ p[data-value]:after {
     padding-bottom: 50px;
     background: url("../images/Prices.jpg");
     background-attachment: fixed;
-    -o-background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-    -ms-background-size: 100% 100%;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 #pricing h3 {
@@ -679,7 +681,7 @@ p[data-value]:after {
             1px 1px 0 #000;
 }
 
-#pricing span {
+#pricing .choose {
     text-align: center;
     display: block;
     margin-top: 20px;
@@ -781,8 +783,24 @@ p[data-value]:after {
 
 @media only screen and (max-width: 768px) {
     #pricing {
-        background: url("../images/Prices3.jpg");
+        margin-top: 0;
+        background: #F1F1F1;
         background-attachment: scroll;
+        background-repeat: no-repeat;
+    }
+
+    #pricing h3 {
+        color: black;
+        text-shadow: none;
+    }
+    
+    #pricing .choose {
+        color: black;
+        text-shadow: none;
+    }
+
+    #pricing  .pricepackage {
+        box-shadow: 0 10px 10px 0 rgba(0,0,0,0.40);
     }
 
     #pricing  .pricepackage ul li.signup button {
@@ -791,12 +809,7 @@ p[data-value]:after {
     }
 }
 
-@media only screen and (max-width: 576px) {
-    #pricing {
-        background: url("../images/Prices2.jpg");
-        background-attachment: scroll;
-    }
-}
+
 /** The end of Pricing **/
 /*--------------------------------------------------------------------------------------------------------------------*/
 /** Contact US **/
