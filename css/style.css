@@ -818,6 +818,25 @@ p[data-value]:after {
         background-attachment: scroll;
         background-repeat: no-repeat;
     }
+
+    #pricing h3 {
+        color: black;
+        text-shadow: none;
+    }
+    
+    #pricing .choose {
+        color: black;
+        text-shadow: none;
+    }
+
+    #pricing  .pricepackage {
+        box-shadow: 0 10px 10px 0 rgba(0,0,0,0.40);
+    }
+
+    #pricing  .pricepackage ul li.signup button {
+        border-radius: 50px;
+        padding: 6px 25px;
+    }
 }
 
 /** The end of Pricing **/
