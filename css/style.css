@@ -378,7 +378,8 @@ header .socialicons a:hover {
 #theteam .member button {
     width: 80%;
     display: block;
-    margin: 10px auto;
+    margin: auto;
+    margin-bottom: 20px;
     padding: 7px 0;
     border: none;
     cursor: pointer;
