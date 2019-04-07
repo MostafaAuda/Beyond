@@ -1,4 +1,4 @@
-# Beyond - OnePage HTML5 Company Portfolio Template
+# ![Template Capture](/Logo.png) - OnePage HTML5 Company Portfolio Template
 ## Beyond is a clean responsive Portfolio template, perfect for companies.
 
 Built from scratch by maintaining best practices of HTML5 / CSS3 / Bootstrap 4.
