@@ -653,14 +653,13 @@ p[data-value]:after {
 #pricing {
     overflow: hidden;
     margin-top: 100px;
-    padding-top: 50px;
+    padding-top: 100px;
     padding-bottom: 50px;
     background: url("../images/Prices.jpg");
     background-attachment: fixed;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-repeat: no-repeat;
+    -o-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
 }
 
 #pricing h3 {
@@ -781,9 +780,9 @@ p[data-value]:after {
     #pricing {
         background: url("../images/Prices3.jpg");
         background-attachment: fixed;
-        -o-background-size: 100% 100%;
-        -moz-background-size: 100% 100%;
-        -webkit-background-size: 100% 100%;
+        -o-background-size: auto;
+        -moz-background-size: auto;
+        -webkit-background-size: auto;
         background-repeat: no-repeat;
     }
 
@@ -797,9 +796,9 @@ p[data-value]:after {
     #pricing {
         background: url("../images/Prices2.jpg");
         background-attachment: fixed;
-        -o-background-size: 100% 100%;
-        -moz-background-size: 100% 100%;
-        -webkit-background-size: 100% 100%;
+        -o-background-size: auto;
+        -moz-background-size: auto;
+        -webkit-background-size: auto;
         background-repeat: no-repeat;
     }
 }
