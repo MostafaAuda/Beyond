@@ -660,7 +660,9 @@ p[data-value]:after {
     -o-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
+    -ms-background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #pricing h3 {
@@ -780,11 +782,7 @@ p[data-value]:after {
 @media only screen and (max-width: 768px) {
     #pricing {
         background: url("../images/Prices3.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
+        background-attachment: scroll;
     }
 
     #pricing  .pricepackage ul li.signup button {
@@ -796,11 +794,7 @@ p[data-value]:after {
 @media only screen and (max-width: 576px) {
     #pricing {
         background: url("../images/Prices2.jpg");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
+        background-attachment: scroll;
     }
 }
 /** The end of Pricing **/
