@@ -214,6 +214,8 @@ header .socialicons a:hover {
     /* Header Style*/
     header {
         background-image: url("../images/H1.jpg");
+        background-attachment: scroll;
+        background-repeat: no-repeat;
     }
 
     header .headerinfo{
