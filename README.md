@@ -1,9 +1,8 @@
 # Beyond - OnePage HTML5 Company Portfolio Template
-## Beyond is a clean Portfolio template, perfect for companies.
+## Beyond is a clean responsive Portfolio template, perfect for companies.
 
-Built from scratch by maintaining best practices of HTML5 / CSS3.
+Built from scratch by maintaining best practices of HTML5 / CSS3 / Bootstrap 4.
 
-*But Itâ€™s not responsive designed for min res 1366 x 768, :disappointed: atleast for now*.
 
 Index page includes Company's: | Featured
 ------------ | -------------
