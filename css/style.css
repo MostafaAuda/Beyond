@@ -244,13 +244,6 @@ header .socialicons a:hover {
         border-radius: 8px;
     }
 
-    header .socialicons {
-        bottom: 20px;
-        position: absolute;
-        text-align: right;
-        right: 30px;
-    }
-
     header .socialicons a {
         font-size: 3vw;
     }
