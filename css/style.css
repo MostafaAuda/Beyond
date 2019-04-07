@@ -677,7 +677,6 @@ p[data-value]:after {
 /** Pricing **/
 #pricing {
     overflow: hidden;
-    margin-top: 100px;
     padding-top: 100px;
     padding-bottom: 50px;
     background: url("../images/Prices.jpg");
