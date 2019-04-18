@@ -58,14 +58,18 @@ header {
     min-height: 100vh;
     overflow: hidden;
     position: relative;
+    width: 100%;
+}
+
+header .HeaderImage {
     background: url("../images/H1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-
-header .HeaderImage {
-    
+    height: 100%;
+    width: 100%;
+    position: absolute; 
+    z-index: 1;
 }
 
 header .HeaderOverlay {
@@ -74,14 +78,14 @@ header .HeaderOverlay {
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     width: 100%;
     min-height: 100vh;
-    z-index: 1;
+    z-index: 2;
 }
 
 header .headerinfo {
     margin-top: 170px;
-    margin-left: 30px;
+    margin-left: 125px;
     width: 100%;
-    z-index: 99;
+    z-index: 3;
     position: absolute; 
 
 }
@@ -123,7 +127,7 @@ header .socialicons {
     text-align: right;
     right: 125px;
     width: 100%;
-    z-index: 99;
+    z-index: 3;
     position: absolute; 
 
 }
