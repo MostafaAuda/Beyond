@@ -61,10 +61,11 @@ header {
     background: url("../images/H1.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -ms-background-size: cover;
+    background-size: cover;
+}
+
+header .HeaderImage {
+    
 }
 
 header .HeaderOverlay {
@@ -73,11 +74,16 @@ header .HeaderOverlay {
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     width: 100%;
     min-height: 100vh;
+    z-index: 1;
 }
 
 header .headerinfo {
     margin-top: 170px;
     margin-left: 30px;
+    width: 100%;
+    z-index: 99;
+    position: absolute; 
+
 }
 
 header .headerinfo h6 {
@@ -116,6 +122,10 @@ header .socialicons {
     position: absolute;
     text-align: right;
     right: 125px;
+    width: 100%;
+    z-index: 99;
+    position: absolute; 
+
 }
 
 header .socialicons a {
@@ -168,7 +178,7 @@ header .socialicons a:hover {
         text-align: center;
         right: 0;
         left: 0;
-        margin: 0in
+        margin: auto
     }
 
     header .socialicons a {
@@ -499,8 +509,6 @@ header .socialicons a:hover {
 }
 
 #ourwork .sample img:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
     transform: scale(1.1); 
   }
 /** The end of Our Work **/
@@ -675,10 +683,6 @@ p[data-value]:after {
     padding-bottom: 50px;
     background: url("../images/Prices.jpg");
     background-attachment: fixed;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    -ms-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
 }
