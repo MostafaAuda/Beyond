@@ -70,8 +70,16 @@ header .HeaderImage {
     width: 100%;
     position: absolute; 
     z-index: 1;
+    animation: animate 5s linear both;
 }
-
+    @keyframes animate {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.25);
+        }
+    }
 header .HeaderOverlay {
     position: absolute; 
     bottom: 0; 
@@ -87,7 +95,6 @@ header .headerinfo {
     width: 100%;
     z-index: 3;
     position: absolute; 
-
 }
 
 header .headerinfo h6 {
@@ -129,7 +136,6 @@ header .socialicons {
     width: 100%;
     z-index: 3;
     position: absolute; 
-
 }
 
 header .socialicons a {
