@@ -165,7 +165,7 @@ header .socialicons a:hover {
 
     header .headerinfo{
         text-align: center;
-        top: 220px;
+        top: 190px;
         right: 0;
         left: 0;
         padding: 0 20px;
@@ -213,7 +213,7 @@ header .socialicons a:hover {
 
     header .headerinfo{
         text-align: center;
-        top: 200px;
+        top: 160px;
         right: 0;
         left: 0;
         padding: 0 20px;
@@ -244,6 +244,7 @@ header .socialicons a:hover {
     header .headerinfo{
         text-align: left;
         top: 120px;
+        left: 80px;
     }
 
     header .headerinfo h6 {
