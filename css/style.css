@@ -59,13 +59,13 @@ header {
     overflow: hidden;
     position: relative;
     width: 100%;
+    padding-top: 66px;
 }
 
 header .HeaderImage {
     background: url("../images/H1.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%;
     height: 100%;
     width: 100%;
     position: absolute; 
@@ -160,8 +160,6 @@ header .socialicons a:hover {
     /* Header Style*/
     header {
         background: url("../images/H2.jpg");
-        background-attachment: scroll;
-        background-repeat: no-repeat;
     }
 
     header .headerinfo{
@@ -208,8 +206,6 @@ header .socialicons a:hover {
     /* Header Style*/
     header {
         background: url("../images/H3.jpg");
-        background-attachment: scroll;
-        background-repeat: no-repeat;
     }
 
     header .headerinfo{
@@ -240,8 +236,6 @@ header .socialicons a:hover {
     /* Header Style*/
     header {
         background-image: url("../images/H1.jpg");
-        background-attachment: scroll;
-        background-repeat: no-repeat;
     }
 
     header .headerinfo{
