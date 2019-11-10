@@ -17,7 +17,7 @@ Contact | Social links
 ![Template Capture](/Capture.png)
 
 # Demo 
-A fully functional demo is available at [Demo](https://mostafaauda.github.io/Beyond/).
+A fully functional demo is available at [Demo](https://mostafaauda.github.io/beyond/).
 
 # License
 Inspired from [w3schools](https://www.w3schools.com/) HTML templates.
